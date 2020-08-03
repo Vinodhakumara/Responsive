@@ -1,0 +1,123 @@
+*{
+    padding: 0%;
+    margin: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height: 100%;
+}
+body{
+    background-color: #f7fafc;
+    font-family: 'Lato',sans-serif;
+    font-size: 1rem;
+    color: #444444;
+}
+.post-wrap{
+    height:420px;
+    width:320px;
+    perspective: 1000px;
+    flex: 1;
+    margin: 0 15px 30px;
+    min-width: 300px;
+    max-width: 380px;
+}
+.post{
+    position: relative;  /* Required to absolutely position the child faces */
+    width:100%;
+    height: 100%;
+}
+
+.post-front,.post-back{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-color: white;
+}
+
+.post-back{
+    transform: rotateY(180deg);
+}
+
+.post-front,.post-back{
+    /* Existing styles here */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.post-wrap:hover .post{
+    transform: rotateY(180deg);
+}
+
+.post{
+    transition:transform 1s;
+    transform-style: preserve-3d;
+}
+
+.front-img{
+    background-size: cover;
+    height: 300px;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.post-back {
+    background-color: #ffffff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* To push the read more button to bottom */
+    align-items: flex-start; /* To position the read more button at the left */
+ }
+ .post-back h2{
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-top: 5px;
+ }
+ .post-back p {
+    margin-top: 10px;
+    line-height: 1.6;
+ }
+ .post-back a{
+    color: #ffffff;
+    background-color: #5678ba;
+    padding: 10px 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-radius: 5px;
+ }
+ 
+.front-info{
+    padding:85% 30px 30px;
+}
+
+.front-info span{
+    font-size: 0.8rem;
+    color: #808080;
+    padding-top: 100%;
+}
+
+.front-info h1{
+    font-weight: bold;
+   font-size: 1.2rem;
+   padding-top: 5px;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Required to position the posts one below the other on smaller devices */
+ }
+ 
+
+ 

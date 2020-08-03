@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive Practice</title>
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="ResponsiveWeb.css">
+        <style>
+
+            *{  
+                margin: 0px;
+                padding: 0px;
+                text-decoration: none;
+                list-style: none;
+                box-sizing: border-box;
+            }
+            section{
+                background:linear-gradient(rgba(255, 255, 255, 0.404) ,rgba(255, 255, 255, 0.007),rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.308)),url("services\ \(2\).jpg")no-repeat;
+                background-size:cover;
+                height: 648px;
+            }
+            .content{
+                margin: 0px;
+                padding: 0px;
+                height: 80px;
+                width:100%;
+                padding-top: 10px;
+                background: linear-gradient(rgba(3, 3, 243, 0.678),rgb(5,5,243),rgba(7, 7, 236, 0.678)) ;
+            }
+            .top{
+                margin-right: 20px;
+                float: right;
+            }
+            .menus{  
+                display:inline-block;
+                margin:0 5px;
+                line-height:60px ;
+            }
+            .active1,.links:hover{
+                background: #1b9bff;
+                transition: .5s;
+            }
+            #logo{
+                font-size: 40px;
+                padding: 10px 100px;
+                line-height: 40px;
+                color: white;
+                font-weight: bold;
+                float: left;
+            }
+            .links{
+                font-size: 20px;
+                color: white;
+                padding: 7px 17px;
+                border-radius: 3px;
+                text-transform: uppercase;
+            }
+            .burger{
+                display: none;
+                font-size: 30px;
+                color: white;
+                float: right;
+                line-height: 80px;
+                margin-right: 40px;
+                cursor: pointer;
+            }
+            #check{
+                display: none;
+            }
+            @media (max-width: 1200px){
+                section{
+                    height: 1100px;
+                }
+            }
+            @media (max-width: 952px){
+                #logo{
+                    font-size: 30px;
+                    padding-left: 50px;
+                }
+                .links{
+                    font-size: 16px;
+                }
+                section{
+                    height: 1100px;
+                }
+            }
+            @media (max-width: 859px)
+            {
+                .burger{
+                    display: block;
+                }
+                section{
+                    height: 1480px;
+                    
+                }
+                .top{
+                    position: fixed;
+                    width:100%;
+                    height: 100vh;
+                    top:80px;
+                    left:-100%;
+                    text-align: center;
+                    background-color:rgba(60, 62, 97, 0.74);
+                    z-index: 1;
+                    padding-top: 10px;
+                    transition:all  .5s;      
+                }   
+                .menus{
+                    display: block;
+                    margin: 50px 0;
+                    line-height: 50px;
+                }
+                .links{
+                    font-size: 20px;
+                }
+                .links:hover,.links.active1{
+                    background: none;
+                    color:#0082e6;
+                }
+                #check:checked ~ ul{
+                    left:0;
+                }
+            }
+        </style>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="RoatateCard.css">
+    </head>
+    <body>
+        <nav class="content">
+            <lable class="" id="logo">Design</lable>
+            <input type="checkbox" id="check">
+            <label for="check" class="burger">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="top">   
+                <li class="menus">
+                    <a href="ResposiveWeb.html" class="links">Home</a>
+                </li>
+                <li class="menus">
+                    <a href="ResposiveWebAbout.html" class="links">About</a>
+                </li>
+                <li class="menus">
+                    <a href="ResposiveWebServices.html" class="links active1">Services</a>
+                </li>
+                <li class="menus">
+                    <a href="ResposiveWebContact.html" class="links">Contact</a>
+                </li class="menus">
+                <li class="menus">
+                    <a href="ResposiveWebFeedback.html" class="links">Feedback</a>
+                </li>
+            </ul>
+            
+        </nav>
+        <section>
+            <div class="container">
+                <div class="post-wrap">
+                    <div class="post">
+                        <div class="post-front" >
+                            <div class="front-img" style="background-image: url('post1.jpg');">
+                                <div class="front-info temp">
+                                    <span>June 25, 2020</span>
+                                    <h1>Productivity: Expectations vs Reality</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-back">
+                            <div class="post-except">
+                                <h2>Productivity: Expectations vs Reality</h2>
+                                <p>
+                                    Et hinc magna voluptatum usu, cum veniam graece et. Ius ea scripserit temporibus, pri cu harum tacimates neglegentur. At adipisci incorrupte nam. Cu qui sumo appareat constituto, possit phaedrum inciderint ex usu, quis ignota cotidieque nam ea. Cum deserunt periculis ocurreret.
+                                </p>
+                            </div>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                    <div class="post-wrap">
+                        <div class="post">
+                            <div class="post-front">
+                                <div class="front-img" style="background-image: url('post2.jpg');">
+                                    <div class="front-info">
+                                        <span>May 19, 2020</span>
+                                        <h1>Will Artificial Intelligence Rule the World?</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-back">
+                                <div class="post-except">
+                                    <h2>Will Artificial Intelligence Rule the World?</h2>
+                                    <p>
+                                        Habemus principes eos id, eu sonet patrioque nam. Eu his mazim insolens, et vim saperet laboramus. Enim gubergren temporibus vix ei. Dicunt iuvaret sadipscing te nam, legere assueverit sed in, at everti labores.
+                                    </p>
+                                    <p>
+                                        Dico facilis dissentias mea cu. Nam assum eripuit an.
+                                    </p>
+                                </div>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="post-wrap">
+                        <div class="post">
+                            <div class="post-front">
+                                <div class="front-img" style="background-image: url('post3.jpg');">
+                                    <div class="front-info">
+                                        <span>July 11, 2020</span>
+                                        <h2>This Week's Top Stories in Web Design</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-back">
+                                <div class="post-except">
+                                    <h2>This Week's Top Stories in Web Design</h2>
+                                    <p>
+                                        Scaevola definitiones eum et. Assum postulant periculis per ei. Doming scribentur sea an. Eum verear docendi tincidunt in.
+                                    </p>
+                                    <p>
+                                        Ne duo posse deserunt, at eam euismod torquatos, est velit essent in. Et diam meliore cotidieque vim. Dicit ignota repudiandae ei pri.
+                                    </p>
+                                </div>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+    </body>
+</html>

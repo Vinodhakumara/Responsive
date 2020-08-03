@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive Practice</title>
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <style>
+
+            *{
+                margin: 0px;
+                padding: 0px;
+                text-decoration: none;
+                list-style: none;
+                box-sizing: border-box;
+            }
+            section{
+                background:linear-gradient(rgba(255, 255, 255, 0.048) ,rgba(255, 255, 255, 0.582),rgba(255, 255, 255, 0.11),rgba(255, 255, 255, 0.014)),url("images\ \(2\).jpg")no-repeat;
+               
+                background-size:cover;
+                height: 800px;
+            }
+            .content{
+                position: fixed;
+                margin: 0px;
+                padding: 0px;
+                height: 80px;
+                width:100%;
+                padding-top: 10px;
+                background: linear-gradient(rgba(85, 85, 252, 0.986),rgb(5,5,243),rgba(76, 76, 240, 0.973)) ;
+            }
+            .top{
+                margin-right: 20px;
+                float: right;
+            }
+            .menus{  
+                display:inline-block;
+                margin:0 5px;
+                line-height:60px ;
+            }
+            .active1,.links:hover{
+                background: #1b9bff;
+                transition: .5s;
+            }
+            #logo{
+                font-size: 40px;
+                padding: 10px 100px;
+                line-height: 40px;
+                color: white;
+                font-weight: bold;
+                float: left;
+            }
+            .links{
+                font-size: 20px;
+                color: white;
+                padding: 7px 17px;
+                border-radius: 3px;
+                text-transform: uppercase;
+            }
+            .burger{
+                display: none;
+                font-size: 30px;
+                color: white;
+                float: right;
+                line-height: 80px;
+                margin-right: 40px;
+                cursor: pointer;
+            }
+            #check{
+                display: none;
+            }
+            @media (max-width: 952px){
+                #logo{
+                    font-size: 30px;
+                    padding-left: 50px;
+                }
+                .links{
+                    font-size: 16px;
+                }
+                #logos{
+                    font-size: 100%;
+                }
+            }
+            @media (max-width: 859px)
+            {
+                .burger{
+                    display: block;
+                }
+                section{
+                    height:550px;
+                }
+                
+                .top{
+                    position: fixed;
+                    width:100%;
+                    height: 100vh;
+                    top:80px;
+                    left:-100%;
+                    text-align: center;
+                    background-color:rgba(60, 62, 97,0.5);
+                    opacity: 0.5;
+                    padding-top: 50px;
+                    transition:all  .5s;      
+                }   
+                .menus{
+                    display: block;
+                    margin: 50px 0;
+                    line-height: 30px;
+                }
+                .links{
+                    font-size: 20px;
+                }
+                .links:hover,.links.active1{
+                    background: none;
+                    color:#0082e6;
+                }
+                #check:checked ~ ul{
+                    left:0;
+                }
+                h1{
+                    font-size: 1px;
+                }
+                
+            }
+            .aa{
+                color: rgba(8, 2, 12, 0.486);
+                line-height: 50px;
+                width:100%;
+                border-radius: 100px;
+                background: rgba(51, 7, 247, 0.24);
+                display: inline-block;
+            }
+            .aa:hover{
+                background:linear-gradient( rgba(51, 7, 247, 0.562),rgba(51, 7, 247, 0.336),rgba(51, 7, 247, 0.575));
+                
+            }
+            .top2{
+                padding-top: 120px;
+            }
+            .content2{
+                float: left;
+                display: block;
+                position: fixed;
+                background-color: rgba(128, 145, 240, 0.164);
+                height: 100%;
+                width:20%;
+                padding-top: 5%;
+                overflow: hidden;
+                text-align: center;
+            }
+           
+            .first{
+                padding: 10px;
+                text-align: start;
+                font-weight: bold;
+                color: rgba(31, 30, 30, 0.637);
+                font-size: 30px;
+            }
+            .first::after{
+                
+                  content: "";
+                height:2px;
+                background-color: rgba(0, 0, 0, 0.315);
+                display: block;
+            }
+            
+            .links2{
+                
+                padding-top: 10px;
+            }
+            .side2{
+                padding-left: 25%;
+                padding-top: 15%;
+                
+            }
+            #h{
+                display: block;
+            }
+            #s,#c,#f{
+                display: none;
+            }
+            h1{
+                padding-bottom: 10px;
+                width:auto;
+                color:rgb(36, 35, 35);
+                font-size: 50px;
+                font-weight: lighter;
+            }
+            h1::after{
+                width:20%;
+                content: "";
+                display: block;
+                background:linear-gradient(to right ,rgba(0, 0, 0, 0.199),rgba(0, 0, 0, 0.199),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.199),rgba(0, 0, 0, 0.24));
+                height:3px;
+            }
+            p{
+                color:rgb(27, 27, 27);
+                font-size: 1.5em;
+                width:auto;
+                max-width: 600px;
+                
+            }
+        </style>
+        
+    </head>
+    <body>
+        
+        <nav class="content">
+            <lable class="" id="logo">Design</lable>
+            <input type="checkbox" id="check">
+            <label for="check" class="burger">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="top">   
+                <li class="menus">
+                    <a href="ResposiveWeb.html" class="links">Home</a>
+                </li>
+                <li class="menus">
+                    <a href="ResposiveWebAbout.html" class="links active1">About</a>
+                </li>
+                <li class="menus">
+                    <a href="ResposiveWebServices.html" class="links">Services</a>
+                </li>
+                <li class="menus">
+                    <a href="ResposiveWebContact.html" class="links">Contact</a>
+                </li class="menus">
+                <li class="menus">
+                    <a href="ResposiveWebFeedback.html" class="links">Feedback</a>
+                </li>
+            </ul>
+            
+        </nav>
+        <section>
+            <nav class="content2">
+                
+                <div class="bef">
+                    
+                <ul class="top2">
+                    <li class="links2 first" id="logos">About website</li>
+                    <li class="links2 ">
+                        <label class="aa" id="hh" onclick="clk('h')" onmouseover="cli('h')">Home</label>
+                    </li>
+                    <li  class="links2">
+                        <label class="aa" id="ss" onclick="clk('s')" onmouseover="cli('s')">Services</label>
+                    </li>
+                    <li class="links2">
+                        <label class="aa" id="cc" onclick="clk('c')" onmouseover="cli('c')">Contacts</label>
+                    </li>
+                    <li class="links2">
+                        <label class="aa" id="ff" onclick="clk('f')" onmouseover="cli('f')">Feedback</label>
+                    </li>
+                </ul>
+                </div>
+            </nav>
+            <section class="side2">
+                    <div  class="side" id="h">
+                    <h1>Home</h1>
+                    <p>This contains Home of this 
+website which includes website name and menu bars 
+where each menu perform specific opertion</p>
+<br>
+<p>A type of economic activity that is intangible, is not stored 
+    and does not result in ownership. A service is consumed at the point of 
+    sale. ... Examples of services include the transfer of goods, such as the postal service
+     delivering mail, and the use of expertise or experience, such as a 
+     person visiting a doctor.</p>
+                    </div>
+                    <div class="side" id="s">
+                        <h1>Services</h1>
+                        <p>A type of economic activity that is intangible, is not stored 
+                            and does not result in ownership. A service is consumed at the point of 
+                            sale. ... Examples of services include the transfer of goods, such as the postal service
+                             delivering mail, and the use of expertise or experience, such as a 
+                             person visiting a doctor.</p>
+<br>
+                             <p>A type of economic activity that is intangible, is not stored 
+                                and does not result in ownership. A service is consumed at the point of 
+                                sale. ... Examples of services include the transfer of goods, such as the postal service
+                                 delivering mail, and the use of expertise or experience, such as a 
+                                 person visiting a doctor.</p>
+                    </div>
+                    <div class="side"  id="c">
+                        <h1>Contacts</h1>
+                        <p>A contact page was a standard web page
+on a website during the early years of the World 
+Wide Web. It enabled the visitor to contact the 
+website owner or people responsible for the 
+maintenance of the site.</p>
+<br>
+<p>A type of economic activity that is intangible, is not stored 
+    and does not result in ownership. A service is consumed at the point of 
+    sale. ... Examples of services include the transfer of goods, such as the postal service
+     delivering mail, and the use of expertise or experience, such as a 
+     person visiting a doctor.</p>
+                    </div>
+                    <div  class="side"   id="f">
+                        <h1>Feedback</h1>
+                        <p>A website feedback widget is a button that
+                             sits at the edge of a web page. Users click the button, rate their experience, 
+                            and usually answer an open-ended question about
+                             how the company could improve their page.</p>
+<br>
+                             <p>A type of economic activity that is intangible, is not stored 
+                                and does not result in ownership. A service is consumed at the point of 
+                                sale. ... Examples of services include the transfer of goods, such as the postal service
+                                 delivering mail, and the use of expertise or experience, such as a 
+                                 person visiting a doctor.</p>
+                    </div>
+            </section>
+        </section>
+        <script>
+            document.getElementById('hh').style.background="linear-gradient( rgba(51, 7, 247, 0.562),rgba(51, 7, 247, 0.336),rgba(51, 7, 247, 0.575))";
+            function cli(str){
+                if(str==='h'){
+               document.getElementById('h').style.display="block";
+               document.getElementById('hh').style.background="linear-gradient( rgba(51, 7, 247, 0.562),rgba(51, 7, 247, 0.336),rgba(51, 7, 247, 0.575))";
+               document.getElementById('f').style.display="none";
+               document.getElementById('ff').style.background="rgba(51, 7, 247, 0.24)";
+               document.getElementById('s').style.display="none";
+               document.getElementById('ss').style.background="rgba(51, 7, 247, 0.24)";
+               document.getElementById('c').style.display="none";
+               document.getElementById('cc').style.background="rgba(51, 7, 247, 0.24)";
+               }
+               else if(str==='f'){
+               document.getElementById('f').style.display="block";
+               document.getElementById('ff').style.background="linear-gradient( rgba(51, 7, 247, 0.562),rgba(51, 7, 247, 0.336),rgba(51, 7, 247, 0.575))";
+               document.getElementById('h').style.display="none";
+               document.getElementById('hh').style.background="rgba(51, 7, 247, 0.24)";
+               document.getElementById('s').style.display="none";
+               document.getElementById('ss').style.background="rgba(51, 7, 247, 0.24)";
+               document.getElementById('c').style.display="none";
+               document.getElementById('cc').style.background="rgba(51, 7, 247, 0.24)";
+               }
+               else if(str==='s'){
+               document.getElementById('s').style.display="block";
+               document.getElementById('ss').style.background="linear-gradient( rgba(51, 7, 247, 0.562),rgba(51, 7, 247, 0.336),rgba(51, 7, 247, 0.575))";
+               document.getElementById('h').style.display="none";
+               document.getElementById('hh').style.background="rgba(51, 7, 247, 0.24)";
+               document.getElementById('f').style.display="none";
+               document.getElementById('ff').style.background="rgba(51, 7, 247, 0.24)";
+               document.getElementById('c').style.display="none";
+               document.getElementById('cc').style.background="rgba(51, 7, 247, 0.24)";}
+               else if(str==='c'){
+               document.getElementById('c').style.display="block";
+               document.getElementById('cc').style.background="linear-gradient( rgba(51, 7, 247, 0.562),rgba(51, 7, 247, 0.336),rgba(51, 7, 247, 0.575))";
+               document.getElementById('f').style.display="none";
+               document.getElementById('ff').style.background="rgba(51, 7, 247, 0.24)";
+               document.getElementById('s').style.display="none";
+               document.getElementById('ss').style.background="rgba(51, 7, 247, 0.24)";
+               document.getElementById('h').style.display="none";
+               document.getElementById('hh').style.background="rgba(51, 7, 247, 0.24)";
+               }
+            }
+            function clk(str2){
+                if(str2==='h')
+               document.getElementById('h').style.display="block";
+               else if(str2==='f')
+               document.getElementById('f').style.display="block";
+               else if(str2==='s')
+               document.getElementById('s').style.display="block";
+               else if(str2==='c')
+               document.getElementById('c').style.display="block";
+            }
+        </script>
+    </body>
+</html>

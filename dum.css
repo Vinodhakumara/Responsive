@@ -1,0 +1,34 @@
+.post-wrap{
+    height:4px;
+    width:1500px;
+    perspective: 1500px;
+    margin: 0 10px 100%;
+}
+.post{
+    position: relative;
+    
+}
+.post-front{
+    text-align: center;
+}
+.post-back,.post-front{
+    position: absolute;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    width: 100%;}
+.post-back{
+    transform: rotateY(180deg);
+    text-align: center;
+}
+.post-wrap:hover .post{
+    transform: rotateY(360deg);
+}
+.post{
+    transition:transform 1s;
+    transform-style: preserve-3d;
+    color: rgba(3, 4, 5, 0.568);
+    font-size: 80px;
+}
