@@ -1,9 +1,75 @@
+<!--<head>
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+</head>
+<style>    vinod
+    *{
+        margin: 0em;
+        padding: 0em;  
+    }
+    .content{
+        width: 959px;
+        margin: 0px auto;
+    }
+    
+    .right-float{
+        width: 675px;
+        float: left;
+        background-color: aquamarine;
+    }
+    .left-float{
+        width: 180px;
+        float: left;
+        background-color:chartreuse;
+    }
+    @media screen and (max-width: 959px){
+        .content{
+            width:100%;
+        }
+        .right-float{
+            width:70%;
+        }
+        .left-float{
+            width:30%;
+        }
+        .imag{
+            width:100%;
+        }
+    }
+    @media screen and (max-width: 659px) {
+        .right-float{
+            width:100%;
+        }
+        .left-float{
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 659px){
+        .content{
+            width:659px;
+        }
+        
+    }
+</style>
+<div class="content">
+    <img src="bg.jpg" class="imag">
+    <section class="right-float">
+        this is section  part gfhgjklk;gfhgjkj
+    </section>
+    <aside class="left-float">
+        left floatingC:\Program Files c:\Users\Vinod kumar
+    </aside>
+</div>
+-->
+
+
+<!--Responsive 2-->
 <!DOCTYPE html>
 <html>
     <head>
         <title>Responsive Practice</title>
         <meta name="viewport" content="width-device-width,initial-scale=1.0">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        
         <style>
 
             *{
@@ -14,13 +80,12 @@
                 box-sizing: border-box;
             }
             section{
-                background: url("contact.jpg") no-repeat;
+                background:linear-gradient(rgba(255, 252, 252, 0.412) ,rgba(0,0, 0, 0.5),rgba(0,0, 0, 0.5),rgba(255, 255, 255, 0.24)),url("bgHome.jpg")no-repeat;
                 background-size:cover;
                 height: 100vh;
-                
+
             }
             .content{
-                position: sticky;
                 margin: 0px;
                 padding: 0px;
                 height: 80px;
@@ -73,18 +138,22 @@
                     font-size: 30px;
                     padding-left: 50px;
                 }
+                .front-info{
+                    font-size: 30px;
+                    padding: 0%;
+                }
                 .links{
                     font-size: 16px;
                 }
             }
             @media (max-width: 859px)
             {
+                .front-info{
+                    font-size: 10px;
+                    padding: 100px;
+                }
                 .burger{
                     display: block;
-                }
-                section{
-                    height: 493px;
-                    
                 }
                 .top{
                     position: fixed;
@@ -93,127 +162,65 @@
                     top:80px;
                     left:-100%;
                     text-align: center;
-                    background-color:rgba(27, 28, 44, 0.562);
-                    z-index: 1;
-                    opacity: 0.9;
+                    background-color:rgba(60, 62, 97,0.5);
+                    opacity: 0.5;
                     padding-top: 50px;
                     transition:all  .5s;      
                 }   
+                section{
+                    height:493px;
+                }
                 .menus{
                     display: block;
                     margin: 50px 0;
                     line-height: 30px;
                 }
+                
                 .links{
                     font-size: 20px;
-                    font-weight: bold;
                 }
                 .links:hover,.links.active1{
                     background: none;
                     color:#0082e6;
+                    
                 }
                 #check:checked ~ ul{
                     left:0;
                 }
-                #i3{
-                    padding-left: 0%;
-                    
-                }
-                #imgdiv{
-                    height:220px;
-                    z-index: 1;
-                }
-                img{
-                    height:130px;
-                }
-                
-                #i2{
-                    padding-left:0;
-                    margin-left: 0;
-                }
-                p{
-                    padding-left: 00px;
-                    width:100px;
-                }
                 
             }
-        @media (max-width: 530px){
-            #imgdiv{
-                    height:200px;
-                    z-index: 1;
-                    
-                }
-                img{
-                    height:110px;
-                    
-                }
-                .imgD{
-                    margin-right: 10%;
-                }
-                
-        }
-        @media (max-width: 450px){
-            #imgdiv{
-                    height:180px;
-                    z-index: 1;
-                    width:250px;
-                    
-                }
-                img{
-                    height:100px;
-                    width:150px;
-                }
-                
-                
-        }
-            #i3{
-                
-                flex-direction: column;
-            }
-        #i2{
-                color: rgba(252, 252, 252, 0.959);
-                font-family: monospace;
+            
+            
+            .lab1{
+                font-size: 40px;
+                color: rgba(5, 5, 209, 0.959);
                 font-weight: bold;
-                text-align: center;
-            }
-            
-            p{
-                width:500px;
-                font-size: 1rem;
-                margin:auto;
                 
             }
-            #i1{
-                text-align: center;
-            }
-            
-            h2{
-                color: rgba(247, 242, 242, 0.37);
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            }
-
-            #imgdiv{
-                position: absolute;
+            .lab2{
+                font-size: 40px;
+                color: rgba(5, 5, 209, 0.959);
                 
-                
-                
-                margin-left: 0%;
-                background: linear-gradient(rgba(3, 3, 243, 0.288),rgb(5,5,243),rgba(7, 7, 236, 0.24)),url('http://placekitten.com/g/800/500');
-                background-size: cover;
-                border:1px solid rgb(89, 0, 255); 
-                text-align: center;
+                font-weight: bolder;
             }
-            img{
-                margin:50px;
+            .temp{
+                padding: 10px;
+                font-size: 30px;
+                background:linear-gradient(rgba(0, 0, 255, 0.336),blue,rgba(0, 0, 255, 0.336));
+                color: white;
+                min-width:300px;
+                max-width: 600px;
+                border-radius: 2px;
             }
-            .imgD {
-    margin-left: 20%;
-    margin-top: 1em;
+            .post-wrap{
+                padding: 17%;
+                padding-left: 25%;
             }
         </style>
     </head>
     <body>
         <nav class="content">
+
             <lable class="" id="logo">Design</lable>
             <input type="checkbox" id="check">
             <label for="check" class="burger">
@@ -221,7 +228,7 @@
             </label>
             <ul class="top">   
                 <li class="menus">
-                    <a href="index.html" class="links">Home</a>
+                    <a href="index.html" class="links active1">Home</a>
                 </li>
                 <li class="menus">
                     <a href="ResposiveWebAbout.html" class="links">About</a>
@@ -230,32 +237,38 @@
                     <a href="ResposiveWebServices.html" class="links">Services</a>
                 </li>
                 <li class="menus">
-                    <a href="ResposiveWebContact.html" class="links  active1">Contact</a>
+                    <a href="ResposiveWebContact.html" class="links">Contact</a>
                 </li class="menus">
                 <li class="menus">
                     <a href="ResposiveWebFeedback.html" class="links">Feedback</a>
                 </li>
             </ul>
-            
         </nav>
-     <section>   
-    <div id="i3">
-        <div id="i1">
-                <div>
-        <h2>Contact Me</h2>
+        <section>
+            
+            <div class="post-wrap">
+                <div class="lab1">Responsive</div>
+            <div class="lab2">Navigation Bar</div>
+                <div class="post">
+                    <div class="post-front" >
+                        
+                            <div class="front-info temp">
+                                
+                                <h2>Using only HTML and CSS</h2>
+                            </div>
+                        
+                    </div>
+                    <!-- <div class="post-back">
+                        <div class="path temp">
+                            Using only HTML and CSS
+                            
+                        </div>
+                        
+                    </div> -->
                 </div>
-            </div >
-            <div class="i2p">
-        <div id="i2"><p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi provident minima perspiciatis doloribus nesciunt quia sapiente optio placeat? Obcaecati omnis optio ut illo! Eaque recusandae corporis, delectus voluptatum possimus aliquam?
-        </div></p></div>
-        <div class='imgD'>
-        <div id="imgdiv">
-        <img src='http://placekitten.com/g/800/450' alt=''/></div>
-        </div>
-        
-    </div>
-
-    </section>
+            </div>
+            
+        </section>
+        <script ></script>
     </body>
 </html>
